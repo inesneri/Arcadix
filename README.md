@@ -38,5 +38,5 @@ Il contesto dell'applicazione è gestito tramite due componenti principali:
 - **SessionProvider**: Fornisce il contesto a tutti i componenti della piattaforma, assicurando che ogni parte dell'applicazione sia sempre aggiornata sullo stato dell'autenticazione dell'utente e sulle informazioni correlate.
 
 ## **Deployment**
-[Arcadix](https://arcadix-nnaf0oj3q-ines-nheris-projects.vercel.app)
+[Arcadix](https://arcadix-git-main-ines-nheris-projects.vercel.app)
 
