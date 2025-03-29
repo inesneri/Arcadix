@@ -36,7 +36,7 @@ export default function Review() {
 
       setReviewTitle("");
       setReviewContent("");
-      navigate(`/games/${id}`);
+      navigate(`/games/${id}/game`);
     }
   };
 
