@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-icons/*'],  // Trattare react-icons/fa come esterno
+      external: ['@supabase/supabase-js'],
     },
   },
 });
