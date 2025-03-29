@@ -17,6 +17,7 @@
     "@mui/lab": "^7.0.0-beta.10",
     "@mui/material": "^7.0.1",
     "@mui/styled-engine": "^5.16.14",
+    "@supabase/supabase-js": "^2.49.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
