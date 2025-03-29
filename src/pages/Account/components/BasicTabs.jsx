@@ -4,7 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import supabase from "../../../supabase/client";
-import styles from "./BasicTabs.module.css"; // Importa il nuovo file CSS
+import styles from "./BasicTabs.module.css";
 import Favorites from "./Favorites";
 import Profile from "./Profile";
 
@@ -43,17 +43,17 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = useState(0);
-  const [reviews, setReviews] = useState([]); // Stato per le recensioni
-  const [loading, setLoading] = useState(true); // Stato per il caricamento delle recensioni
+  const [reviews, setReviews] = useState([]); 
+  const [loading, setLoading] = useState(true); 
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  // Carica le recensioni dal database
+  
   useEffect(() => {
     const fetchReviews = async () => {
-      setLoading(true); // Setta il caricamento su true
+      setLoading(true);
       const { data, error } = await supabase
         .from("reviews")
         .select(
@@ -64,10 +64,10 @@ export default function BasicTabs() {
       if (error) {
         console.log("Errore nel recupero delle recensioni:", error.message);
       } else {
-        setReviews(data); // Salva le recensioni nello stato
+        setReviews(data);
       }
 
-      setLoading(false); // Setta il caricamento su false quando i dati sono stati caricati
+      setLoading(false); 
     };
 
     fetchReviews();

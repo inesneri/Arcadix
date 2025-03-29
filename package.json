@@ -14,6 +14,7 @@
     "@mui/lab": "^6.0.0-beta.31",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
     "react-router-dom": "^7.2.0",
     "sweetalert2": "^11.6.13"
   },
