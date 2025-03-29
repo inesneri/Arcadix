@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@supabase/supabase-js'],
+      external: ['@supabase/supabase-js', 'react-lazy-load-image-component'],
     },
   },
 });
