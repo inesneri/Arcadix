@@ -1,0 +1,337 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.gameBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+.gameTitle h1 {
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: left;
+  color: #ddd;
+}
+
+.screenshots {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-right: 285px;
+}
+
+.screenshotWrapper {
+  display: flex;
+  animation: scroll-loop 20s linear infinite;
+}
+
+.screenshotImage {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.favBtn,
+.reviewBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.favBtn:hover,
+.reviewBtn:hover {
+  background-color: #e64a3d;
+}
+
+.favBtn svg,
+.reviewBtn svg {
+  font-size: 20px;
+}
+
+.descriptionText {
+  display: block;
+  text-align: justify;
+  margin: 10px 0;
+  line-height: 1.5;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.readMore {
+  text-decoration: underline;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+.readMore:hover {
+  font-weight: bold;
+  color: rgb(255, 192, 249);
+}
+
+.gameImage {
+  width: 1250px;
+  margin: auto;
+}
+
+.gameDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.releaseDate {
+  font-size: 18px;
+  color: #ddd;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #ffb400;
+}
+
+.rating svg {
+  margin-right: 5px;
+}
+
+.rating span {
+  font-size: 18px;
+  color: #fff;
+}
+
+.reviewsSection {
+  margin-top: 40px;
+}
+
+.reviewsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 1200px;
+}
+
+.reviewCard {
+  background-color: #f9f9f928;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviewTitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.reviewDate {
+  align-items: end;
+  font-size: 15px;
+  color: #f7f4f4;
+}
+
+.reviewContent {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fdfafa;
+}
+
+.reviewAuthor {
+  color: #cbcbce;
+  font-style: italic;
+}
+
+.formTitle {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.P {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #20ca2e;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  transform: scaleX(-1);
+}
+
+.chatButton:hover {
+  background-color: #1fb11ac4;
+}
+
+.chatContainer {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 450px;
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.chatHeader {
+  padding: 10px;
+  background: linear-gradient(90deg, rgb(98, 238, 191) 0%, rgb(116, 204, 58) 50%, rgb(92, 211, 103) 70%, rgb(159, 245, 152) 100%);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px 8px 0 0;
+}
+
+.chatHeader h3 {
+  color: rgb(255, 255, 255);
+}
+
+.separator {
+  margin-top: 5px;
+  height: 1px;
+  background-color: #0f0d0d;
+}
+
+.messages {
+  padding: 15px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.chatUsername {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.textMessage {
+  background-color: #e0fcc4;
+  color: #121212;
+  padding: 10px;
+  border-radius: 18px;
+  max-width: 70%;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+  margin-top: 18px;
+}
+
+.formChat {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.formChat input[type="text"] {
+  padding: 15px;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.formChat input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 95px;
+  white-space: nowrap;
+  margin-bottom: 9px;
+  margin-right: 15px;
+}
+
+.formChat input[type="submit"]:hover {
+  background-color: #218838;
+}

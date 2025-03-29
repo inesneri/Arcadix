@@ -1,0 +1,100 @@
+.mainProfile {
+  background-image: url(../../../media/profile.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 97vh;
+
+}
+
+.tabsContainer {
+  width: 100%;
+  background-color: #121212;
+  border-radius: 8px;
+  height: 100vh;
+  color: #fff;
+
+}
+
+.tabsHeader {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.tabs {
+  background-color: #faf0f05d;
+  color: #fff;
+}
+
+
+.tabs .MuiTab-root {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.tabs .MuiTab-root:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.tabPanel {
+  padding: 15px;
+  color: #fff;
+}
+
+.reviewCard {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.reviewsContainer {
+  max-height: 900px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.reviewTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.reviewUsername {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.reviewContent {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.reviewDate {
+  font-size: 12px;
+  color: #888;
+}
+
+.loadingText {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.noReviews {
+  color: #fff;
+}
